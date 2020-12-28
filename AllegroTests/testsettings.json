@@ -1,0 +1,6 @@
+{
+  "ApiPath": "##ApiPath##",
+  "OAuthPath": "##OAuthPath##",
+  "ClientId": "##ClientId##",
+  "ClientSecret": "##ClientSecret##"
+}
