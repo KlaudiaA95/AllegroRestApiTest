@@ -1,6 +1,6 @@
 {
-  "ApiPath": "##ApiPath##",
-  "OAuthPath": "##OAuthPath##",
+  "ApiPath": "https://api.allegro.pl",
+  "OAuthPath": "https://allegro.pl/auth/oauth/token?grant_type=client_credentials",
   "ClientId": "##ClientId##",
   "ClientSecret": "##ClientSecret##"
 }

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllegroRestApiTests", "AllegroRestApiTests\AllegroRestApiTests.csproj", "{71A92DB2-D145-4297-A7F2-EF2A0AEBB8B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AllegroRestApi", "AllegroRestApiTests\AllegroRestApi.csproj", "{71A92DB2-D145-4297-A7F2-EF2A0AEBB8B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllegroTests", "AllegroTests\AllegroTests.csproj", "{5F1EE84D-63BB-4954-BA1C-1E1F165B8CA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AllegroTests", "AllegroTests\AllegroTests.csproj", "{5F1EE84D-63BB-4954-BA1C-1E1F165B8CA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
