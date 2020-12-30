@@ -13,10 +13,10 @@ namespace AllegroTests
         public void CategoryParameters_GetParametersNamesAndIds_IsPossible()
         {
             //arrange
-            var resource = "42540aec-367a-4e5e-b411-17c09b08e41f";
+            var categoryId = "42540aec-367a-4e5e-b411-17c09b08e41f";
 
             //act
-            var response = _client.GetCategoryParameters(_token, resource);
+            var response = _client.GetCategory(_token, categoryId + "/parameters");
             var content = JsonConvert.DeserializeObject<CategoryParametersResult>(response.Content);
 
             //assert
@@ -29,10 +29,10 @@ namespace AllegroTests
         public void CategoryParameters_GetNumberOfParameters_IsPossible()
         {
             //arrange
-            var resource = "42540aec-367a-4e5e-b411-17c09b08e41f";
+            var categoryId = "42540aec-367a-4e5e-b411-17c09b08e41f";
 
             //act
-            var response = _client.GetCategoryParameters(_token, resource);
+            var response = _client.GetCategory(_token, categoryId + "/parameters");
             var content = JsonConvert.DeserializeObject<CategoryParametersResult>(response.Content);
 
             //assert
@@ -44,7 +44,7 @@ namespace AllegroTests
         public void CategoryParameters_GetPatametersWithoutCategoryId_IsIpossible()
         {
             //arrange&act
-            var response = _client.GetCategoryParameters(_token, "");
+            var response = _client.GetCategory(_token, "/parameters");
             var content = JsonConvert.DeserializeObject<ErrorResult>(response.Content);
 
             //assert

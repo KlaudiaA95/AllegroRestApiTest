@@ -24,14 +24,7 @@ namespace AllegroRestApiTests
 
         public IRestResponse GetCategory(string token, string resource)
         {
-            var request = new RestRequest(categoriesBasePath + resource, Method.GET);
-            AddRequestHeaders(request, token);
-            return _restClient.Execute(request);
-        }
-
-        public IRestResponse GetCategoryParameters(string token, string categoryId)
-        {
-            var request = new RestRequest(categoriesBasePath + $"/{categoryId}/parameters", Method.GET);
+            var request = new RestRequest(categoriesBasePath + "/" + resource, Method.GET);
             AddRequestHeaders(request, token);
             return _restClient.Execute(request);
         }
