@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AllegroRestApiTests\AllegroApi.csproj" />
+    <ProjectReference Include="..\AllegroApi\AllegroApi.csproj" />
   </ItemGroup>
 
   <ItemGroup>
